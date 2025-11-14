@@ -1,0 +1,173 @@
+body {
+    margin: 0px;
+}
+
+#a {
+    background-color: black;
+    height: 60px;
+}
+
+#b {
+    background-color: blue;
+    height: 60px;
+    clip-path: polygon(
+        0% 0,
+        0 0%,
+        calc(100% - 20px) 0%,
+        100% 20px,
+        100% 100%,
+        calc(100% - 20px) 100%,
+        20px 100%,
+        0 calc(100% - 20px)
+    );
+}
+
+#g {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#g img {
+    height: 65px;
+    width: 65px;
+}
+
+#c {
+    background-color: blueviolet;
+    height: 297px;
+    padding-bottom: 8px;
+}
+
+#w h1 {
+    color: white;
+    padding-top: 5px;
+    display: flex;
+    justify-self: center;
+    margin: 0 10px 10px 10px;
+}
+
+#w p {
+    color: white;
+    margin: 7px;
+    display: flex;
+    justify-self: center;
+}
+
+#d {
+    background-color: darkseagreen;
+    height: 52px;
+    width: 18%;
+    margin-bottom: 9px;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#divslide {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#divslide img{
+    width: 40px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+#divslide img:hover {
+    transform: scale(1.075);
+}
+
+#e {
+    background-color: burlywood;
+    height: 50px;
+    width: 60%;
+    display: flex;
+    justify-self: center;
+}
+
+input {
+    width: 85%;
+}
+
+#pasteBtn {
+    width: 7.5%;
+}
+
+#downloadBtn {
+    width: 7.5%;
+}
+
+#f {
+    background-color: aqua;
+    height: 330px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.fe2 {
+    background-color: white;
+    height: 330px;
+    width: 23%;
+    border: 2px solid grey;
+    display: inline-block;
+    justify-self: center;
+    justify-items: center;
+}
+
+hr {
+    border: 1px solid grey;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-self: center;
+}
+
+footer {
+    background-color: blue;
+    height: 53px;
+}
+
+footer p {
+    color: white;
+    display: flex;
+    justify-self: center;
+}
+
+@media (max-width: 600px) {
+    #d {
+        background-color: darkseagreen;
+        height: 47px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #e {
+        background-color: burlywood;
+        height: 50px;
+        width: 92%;
+    }
+
+    #pasteBtn {
+        width: 13.5%;
+    }
+
+    #downloadBtn {
+        width: 13.5%;
+    }
+
+    #f {
+        display: flexbox;
+    }
+}

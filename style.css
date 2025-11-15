@@ -1,32 +1,32 @@
 body {
-    margin: 0px;
+    margin: 0;
+    font-family: 'damn_the_man' sans-serif;
 }
 
-#a {
+header {
     background-color: black;
     height: 60px;
 }
 
 #b {
     background-color: blue;
-    height: 60px;
+    height: 100%;
     clip-path: polygon(
-        0% 0,
-        0 0%,
-        calc(100% - 20px) 0%,
-        100% 20px,
-        100% 100%,
-        calc(100% - 20px) 100%,
-        20px 100%,
-        0 calc(100% - 20px)
+    0% 0,
+    calc(100% - 20px) 0%,
+    100% 0,
+    100% 100%,
+    calc(100% - 20px) 100%,
+    31px 100%,
+    0 calc(100% - 22.5px)
     );
 }
 
 #g {
-    height: 60px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    height: 100%;
     width: 60px;
-    position: relative;
-    left: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,52 +41,66 @@ body {
     background-color: blueviolet;
     height: 297px;
     padding-bottom: 8px;
+    padding-top: 5px;
 }
 
-#w h1 {
+h1 {
     color: white;
-    padding-top: 5px;
+    margin: 0;
     display: flex;
     justify-self: center;
-    margin: 0 10px 10px 10px;
 }
 
-#w p {
+p {
+    margin: 0;
     color: white;
-    margin: 7px;
     display: flex;
     justify-self: center;
 }
 
 #d {
-    background-color: darkseagreen;
-    height: 52px;
-    width: 18%;
-    margin-bottom: 9px;
+    background-color: rgba(130, 130, 255, 0.5);
+    backdrop-filter: blur(50px);
+    height: auto;
+    width: auto;
+    padding-left: 10px;
+    padding-bottom: 6px;
+    padding-right: 10px;
+    padding-top: 6px;
+    margin: 7px 0;
+    overflow: hidden;
     display: flex;
     justify-self: center;
     justify-content: center;
     align-items: center;
 }
 
-#divslide {
+.slider {
     display: flex;
-    align-items: center;
     gap: 6px;
+    animation: scroll 5s linear infinite;
 }
 
-#divslide img{
-    width: 40px;
+#d img{
+    width: 50px;
     overflow: hidden;
     transition: 0.2s;
 }
 
-#divslide img:hover {
+#d img:hover {
     transform: scale(1.075);
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-110%);
+  }
+}
+
 #e {
-    background-color: burlywood;
     height: 50px;
     width: 60%;
     display: flex;
@@ -94,65 +108,47 @@ body {
 }
 
 input {
+    outline: none;
+    border: none;
     width: 85%;
+    padding-left: 20px;
 }
 
 #pasteBtn {
+    color: blue;
+    border: none;
     width: 7.5%;
+}
+
+.divider {
+    width: 2px;
+    height: 20px;
+    background-color: gray;
 }
 
 #downloadBtn {
+    color: green;
+    border: none;
     width: 7.5%;
 }
 
-#f {
-    background-color: aqua;
-    height: 330px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-}
-
-.fe2 {
-    background-color: white;
-    height: 330px;
-    width: 23%;
-    border: 2px solid grey;
-    display: inline-block;
-    justify-self: center;
-    justify-items: center;
-}
-
-hr {
-    border: 1px solid grey;
-    width: 50%;
-    margin: 0 auto;
-    display: flex;
-    justify-self: center;
-}
-
 footer {
-    background-color: blue;
+    background-color: rgb(215, 215, 215);
     height: 53px;
+    padding: 0 12.5px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
-footer p {
-    color: white;
-    display: flex;
-    justify-self: center;
+#version {
+    background-color: white;
+    color: rgb(180, 180, 180);
+    padding: 3px;
+    border: 2.5px solid rgb(180, 180, 180);
 }
 
 @media (max-width: 600px) {
-    #d {
-        background-color: darkseagreen;
-        height: 47px;
-        width: 50%;
-        display: flex;
-        justify-content: center;
-    }
-
     #e {
         background-color: burlywood;
         height: 50px;
